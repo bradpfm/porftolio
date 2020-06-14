@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Roboto:wght@300&display=swap');
+ body {
+  background-color: rgb(226, 217, 217);
+  font-family: Arial;
+  font-weight: lighter;
+  font-size: 17px;
+} 
+
+ h1 {
+  color: lightslategray;
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+} 
+
+.img-circle {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+} 
+
+p {
+}
+
+h2 {
+  font-family: Arial;
+  color: lightsalmon;
+  font-weight: lighter;
+  margin: auto;
+} 
+
+
+ .container {
+    width: 700px;
+    margin: 40px auto;
+  }  
+
+
+ @media (max-width: 768px) {
+  .container {
+    width: 500px;
+    margin: 40px auto;
+  }
+} 
+
+  @media (max-width: 540px) {
+  .container {
+    width: 300px;
+    margin: 40px auto;
+  }
+} 
+
+.card-white {
+  text-align: center;
+  
+  padding: 60px;
+  box-shadow: 0px 10px 30px rgba(0,0,0,0.5);
+  border-radius: 3px;
+  margin: 20px 0px;
+}  */
+
+.btn-salmon {
+  color: white;
+  text-decoration: unset;
+  font-size: 17px;
+  width: 170px;
+  height: 100px;
+  background-color: lightcoral;
+  border-radius: 3px;
+  padding: 7px 20px;
+  box-shadow: 0px 10px 30px rgba(0,0,0,0.2);
+} 
+.btn-salmon:hover {
+  background-color: #222121af;
+} 
+
+ li {
+  display: inline-block;
+  list-style: none;
+  font-size: 40px;
+  padding: 0 10px;
+} 
+
+ ul {
+  padding-left: 0px;
+} 
+
+ li > a > i {
+  color: slategray;
+}  
