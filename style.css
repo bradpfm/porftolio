@@ -1,29 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Roboto:wght@300&display=swap');
  body {
-  background-color:white;
+  background-color:rgba(13, 22, 56, 0.707);
   font-family: Arial;
   font-weight: lighter;
   font-size: 17px;
 } 
 
+.banner {
+  display: flex;
+  background-size: cover;
+  padding: 150px 0;
+  text-align: center;
+}
+
+.banner h1 {
+  margin: 0;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.banner p {
+  display: block;
+  font-size: 20px;
+  color: white;
+  opacity: .7;
+  margin-left: auto;
+  margin-right: auto;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+
+p {
+  color: white;
+}
+
  h1 {
-  color: lightslategray;
+  color: white;
   font-family: 'Roboto', sans-serif;
   font-size: 30px;
 } 
+
 
 .img-circle {
   border-radius: 50%;
   width: 150px;
   height: 150px;
+  margin-top: 10px;
 } 
-
-p {
-}
 
 h2 {
   font-family: Arial;
-  color: lightsalmon;
+  color: white;
   font-weight: lighter;
   margin: auto;
 } 
@@ -49,14 +78,18 @@ h2 {
   }
 } 
 
-.card-white {
+.about-me{
   text-align: center;
-  
-  padding: 60px;
+}
+
+.footer{
+  background-color: slategray;
+  text-align: center;
+  padding: 20px;
   box-shadow: 0px 10px 30px rgba(0,0,0,0.5);
   border-radius: 3px;
   margin: 20px 0px;
-}  */
+}  
 
 .btn-salmon {
   color: white;
@@ -64,11 +97,12 @@ h2 {
   font-size: 17px;
   width: 170px;
   height: 100px;
-  background-color: lightcoral;
+  background-color: white;
   border-radius: 3px;
   padding: 7px 20px;
   box-shadow: 0px 10px 30px rgba(0,0,0,0.2);
 } 
+
 .btn-salmon:hover {
   background-color: #222121af;
 } 
@@ -85,5 +119,49 @@ h2 {
 } 
 
  li > a > i {
-  color: slategray;
+  color: white;
 }  
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+
+// Smallest device
+@media (min-width: 100px) and (max-width: 575px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+ .card-category {
+   padding: 50px;
+ }
