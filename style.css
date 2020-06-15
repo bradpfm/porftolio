@@ -1,13 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Roboto:wght@300&display=swap');
  body {
-  background-color:rgba(13, 22, 56, 0.707);
-  font-family: Arial;
+  background-color:black;
+  font-family: 'Courier New', Courier, monospace;
   font-weight: lighter;
   font-size: 17px;
 } 
 
+#introduction {
+  text-align: center;
+}
+
 .banner {
-  display: flex;
   background-size: cover;
   padding: 150px 0;
   text-align: center;
@@ -18,7 +21,6 @@
   color: white;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   font-size: 32px;
-  font-weight: bold;
 }
 
 .banner p {
@@ -29,17 +31,22 @@
   margin-left: auto;
   margin-right: auto;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  max-width: 50%;
 }
 
 
 p {
   color: white;
+  font-family: 'Courier New', Courier, monospace;
+  max-width: 50%;
+  font-size: 20px;
 }
 
  h1 {
   color: white;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Courier New', Courier, monospace;
   font-size: 30px;
+  font-weight: lighter;
 } 
 
 
@@ -47,11 +54,15 @@ p {
   border-radius: 50%;
   width: 150px;
   height: 150px;
-  margin-top: 10px;
+  margin-top: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 } 
 
 h2 {
-  font-family: Arial;
+  font-family: 'Courier New', Courier, monospace;
   color: white;
   font-weight: lighter;
   margin: auto;
@@ -83,29 +94,13 @@ h2 {
 }
 
 .footer{
-  background-color: slategray;
+  background-color: black;
   text-align: center;
   padding: 20px;
   box-shadow: 0px 10px 30px rgba(0,0,0,0.5);
   border-radius: 3px;
   margin: 20px 0px;
 }  
-
-.btn-salmon {
-  color: white;
-  text-decoration: unset;
-  font-size: 17px;
-  width: 170px;
-  height: 100px;
-  background-color: white;
-  border-radius: 3px;
-  padding: 7px 20px;
-  box-shadow: 0px 10px 30px rgba(0,0,0,0.2);
-} 
-
-.btn-salmon:hover {
-  background-color: #222121af;
-} 
 
  li {
   display: inline-block;
@@ -119,16 +114,18 @@ h2 {
 } 
 
  li > a > i {
-  color: white;
+  color:white;
 }  
-
+li > a > i:hover {
+  color: gray;
+}
 .cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 16px;
 }
 
-// Smallest device
+/* // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
   .cards {
     grid-template-columns: 1fr;
@@ -161,7 +158,45 @@ h2 {
   .cards {
     grid-template-columns: 1fr 1fr 1fr;
   }
-}
+} */
  .card-category {
-   padding: 50px;
+   padding: 100px;
+   background-size: cover;
+ }
+ /* .card-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+ } */
+
+ .project-title {
+   text-align: center;
+   margin-bottom: 20px;
+ }
+
+ .todo {
+   justify-content: center;
+ }
+
+ .skills-list {
+   color: white;
+   font-family: 'Courier New', Courier, monospace;
+   text-align: center;
+   margin: 40px;
+   margin-bottom: 200px;
+ }
+
+ .skills-list li {
+   font-size: 20px;
+ }
+
+ .card-category:hover {
+   background-color: white;
+   opacity: 80%;
+ }
+
+ .card-info {
+   text-align: justify;
+   max-width: 80%;
+   font-size: 16px;
  }

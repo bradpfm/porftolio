@@ -10,34 +10,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-
-    <div class="banner" style="background-image: url(https://image.freepik.com/free-photo/programming-code-abstract-technology-background-software-developer-computer-script_34663-31.jpg);">
-      <divs id="introduction">
-        <h1>Hello, my name is Bradley, Im a Full-Stack Developer</h1>
-        <img src="images/bradley.jpg" class="img-circle" alt="Bradley Scott">
-        <h2>About me</h2>
-        <p>These are my first steps into a larger world and my first steps into becoming a programmer! I like video games, movies, fencing, and all things pop-culture. I enjoy creating stories as much as I do hearing one.</p>
-      </div>
-
-      <div class="card-white">
-        <h2>Projects I've worked on</h2>
-        </div>
-      </div>
-      <div>
-      <div class="cards">
-        <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
-          Socialite
+    <div id="app"></div>
+      <div class="banner">
+        <divs id="introduction">
+          <h1 id="text">Hello, my name is Bradley <br/> Im a Full-Stack Developer</h1>
+          <img src="images/bradley.jpg" class="img-circle"  alt="Bradley Scott">
+          <p id="app"> Originally hailing from the great city of Oxford, I spent most of my life hopping back and forth over the atlantic.
+            Between the sunny beaches of Florida and the dreary skies of England Ive met many people grown to appreciate the differences in the human experience.
+          </br>
+          </br>
+            I enjoy creating client-facing applications, working within a group of talented peoplee, and I have experience working in github. I am a recent Le Wagon Full-Stack coding bootcamp graduate and I'm looking to kickstart my career and begin a new chapter in my life.
+          </br>
+          </br>
+            When I'm not planted in an editor you can find me gaming, fencing or just out for a stroll in the Oxfordshire country-side. 
+          </p>
         </div>
       
-        <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/lunch.jpg)">
-          AirBnB Clone
-        </div>
-      
-        <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/dinner.jpg)">
-          Beer Takeway app
-        </div>
+      <div class="skills-list">
+        <h2>Langauges I use</h2>
+          <ol class="list-inline">
+          <li>Ruby</li>
+          <li>Rails</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>SQL</li>
+          <li>Javascript</li>
+          <li>React</li>
+        </ol>
       </div>
     </div>
+  </div>
+
+      <div class="project-title">
+        <h2>Projects I've worked on</h2>
+      </div>
+      
+      <div class="cards">
+        <div>
+        <a href="http://www.socialite-app.co/"><div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(images/socialite.png)">
+          </div>
+           </a>
+          <p class="card-info"><strong>Socialite</strong></br>Find places that are right for you and invite your friends! Make plans, share them, and get out there!</p>
+        </div>
+       
+        <div>
+         <a href="https://airbnb-leocareyw.herokuapp.com/"><div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(images/rails.png)">
+          </div>
+        </a>
+        <p class="card-info"><Strong>AirBnB Clone</Strong></br>A rails App designed to be a clone of the AirBnB website. Made at the Le Wagon Bootcamp, showcasing the basic CRUD actions.</p>
+       </div>
+        
+          <div>
+          <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/dinner.jpg)">
+          </div>
+      </div>
+    </div>
+      <div>
       <div class="footer">
         <h2>Follow me</h2>
         <ul class="list-inline">
@@ -49,4 +77,3 @@
     </div>
   </body>
 </html>
-
