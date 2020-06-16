@@ -13,7 +13,23 @@
     <div id="app"></div>
       <div class="banner">
         <divs id="introduction">
-          <h1 id="text">Hello, my name is Bradley <br/> Im a Full-Stack Developer</h1>
+          <h1><span id="banner-typed-text"></span>Hello World </h1>
+          <script src="node_modules/typed.js/src/typed.js" type="module">
+   
+            //  import Typed from '../../typed.js';
+        
+            const loadDynamicBannerText = () => {
+              new Typed("#banner-typed-text", {
+                strings: ["Hello, my name is Bradley, Im a Full-Stack Developer"],
+                typeSpeed: 50,
+                loop: false
+              });
+            }
+          
+            document.addEventListener('turbolinks:load', () => {
+            loadDynamicBannerText();
+          });
+          </script>
           <img src="images/bradley.jpg" class="img-circle"  alt="Bradley Scott">
           <p id="app"> Originally hailing from the great city of Oxford, I spent most of my life hopping back and forth over the atlantic.
             Between the sunny beaches of Florida and the dreary skies of England Ive met many people grown to appreciate the differences in the human experience.
@@ -25,7 +41,7 @@
             When I'm not planted in an editor you can find me gaming, fencing or just out for a stroll in the Oxfordshire country-side. 
           </p>
         </div>
-      
+        
       <div class="skills-list">
         <h2>Langauges I use</h2>
           <ol class="list-inline">
@@ -76,4 +92,5 @@
       </div>
     </div>
   </body>
+  
 </html>
