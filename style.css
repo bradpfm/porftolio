@@ -4,23 +4,26 @@
   font-family: 'Courier New', Courier, monospace;
   font-weight: lighter;
   font-size: 17px;
+  /* position: absolute; */
 } 
 
 #introduction {
   text-align: center;
+  /* position: sticky; */
+  margin-bottom: 30px;
 }
 
 .banner {
   background-size: cover;
-  padding: 150px 0;
+  /* padding: 150px 0; */
   text-align: center;
 }
 
 .banner h1 {
-  margin: 0;
   color: white;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   font-size: 32px;
+  margin-bottom: 30px;
 }
 
 .banner p {
@@ -47,6 +50,7 @@ p {
   font-family: 'Courier New', Courier, monospace;
   font-size: 30px;
   font-weight: lighter;
+  /* position: fixed; */
 } 
 
 
@@ -54,7 +58,6 @@ p {
   border-radius: 50%;
   width: 150px;
   height: 150px;
-  margin-top: 20px;
   text-align: center;
   margin-bottom: 20px;
   margin-left: 20px;

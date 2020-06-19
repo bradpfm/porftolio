@@ -10,52 +10,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-    <div id="app"></div>
+    
+      <div id="introduction">  
+        <h1> <span id="banner-typed-text"></span></h1>
+      </div>
       <div class="banner">
-        <divs id="introduction">
-          <h1><span id="banner-typed-text"></span>Hello World </h1>
-          <script src="node_modules/typed.js/src/typed.js" type="module">
-   
-            //  import Typed from '../../typed.js';
-        
-            const loadDynamicBannerText = () => {
-              new Typed("#banner-typed-text", {
-                strings: ["Hello, my name is Bradley, Im a Full-Stack Developer"],
-                typeSpeed: 50,
-                loop: false
-              });
-            }
-          
-            document.addEventListener('turbolinks:load', () => {
-            loadDynamicBannerText();
-          });
-          </script>
-          <img src="images/bradley.jpg" class="img-circle"  alt="Bradley Scott">
-          <p id="app"> Originally hailing from the great city of Oxford, I spent most of my life hopping back and forth over the atlantic.
-            Between the sunny beaches of Florida and the dreary skies of England Ive met many people grown to appreciate the differences in the human experience.
-          </br>
-          </br>
-            I enjoy creating client-facing applications, working within a group of talented peoplee, and I have experience working in github. I am a recent Le Wagon Full-Stack coding bootcamp graduate and I'm looking to kickstart my career and begin a new chapter in my life.
-          </br>
-          </br>
-            When I'm not planted in an editor you can find me gaming, fencing or just out for a stroll in the Oxfordshire country-side. 
-          </p>
-        </div>
-        
+      <img src="images/bradley.jpg" class="img-circle"  alt="Bradley Scott">
+      <p> Originally hailing from the great city of Oxford, I spent most of my life hopping back and forth over the atlantic.
+      Between the sunny beaches of Florida and the dreary skies of England Ive met many people grown to appreciate the differences in the human experience.
+      </br>
+      </br>
+      I enjoy creating client-facing applications, working within a group of talented peoplee, and I have experience working in github. I am a recent Le Wagon Full-Stack coding bootcamp graduate and I'm looking to kickstart my career and begin a new chapter in my life.
+      </br>
+      </br>
+      When I'm not planted in an editor you can find me gaming, fencing or just out for a stroll in the Oxfordshire country-side. 
+      </p>
       <div class="skills-list">
         <h2>Langauges I use</h2>
-          <ol class="list-inline">
-          <li>Ruby</li>
-          <li>Rails</li>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>SQL</li>
-          <li>Javascript</li>
-          <li>React</li>
+        <ol class="list-inline">
+        <li>Ruby</li>
+        <li>Rails</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>SQL</li>
+        <li>Javascript</li>
+        <li>React</li>
         </ol>
       </div>
     </div>
-  </div>
+        
 
       <div class="project-title">
         <h2>Projects I've worked on</h2>
@@ -63,25 +46,26 @@
       
       <div class="cards">
         <div>
-        <a href="http://www.socialite-app.co/"><div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(images/socialite.png)">
-          </div>
-           </a>
-          <p class="card-info"><strong>Socialite</strong></br>Find places that are right for you and invite your friends! Make plans, share them, and get out there!</p>
+          <a href="http://www.socialite-app.co/" target="_blank">
+            <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(images/socialite.png)">
+            </div>
+          </a>
+         <p class="card-info"><strong>Socialite</strong></br>Find places that are right for you and invite your friends! Make plans, share them, and get out there!</p>
         </div>
        
         <div>
-         <a href="https://airbnb-leocareyw.herokuapp.com/"><div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(images/rails.png)">
+         <a href="https://airbnb-leocareyw.herokuapp.com/" target="_blank">
+          <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(images/rails.png)">
           </div>
-        </a>
+         </a>
         <p class="card-info"><Strong>AirBnB Clone</Strong></br>A rails App designed to be a clone of the AirBnB website. Made at the Le Wagon Bootcamp, showcasing the basic CRUD actions.</p>
        </div>
-        
-          <div>
+      
+        <div>
           <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/dinner.jpg)">
           </div>
+        </div>
       </div>
-    </div>
-      <div>
       <div class="footer">
         <h2>Follow me</h2>
         <ul class="list-inline">
@@ -91,6 +75,8 @@
         </ul>
       </div>
     </div>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script> -->
+    <script type="module" src="application.js"></script>
   </body>
   
 </html>
