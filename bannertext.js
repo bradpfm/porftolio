@@ -1,4 +1,4 @@
-import Typed from 'https://bradpfm.github.io/node_modules/typed.js/src/typed.js';
+import Typed from 'node_modules/typed.js/src/typed.js';
  console.log("hello")
  const loadDynamicBannerText = () => {
    console.log("hello");
