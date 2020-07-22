@@ -6,6 +6,7 @@
     "typed.js": "^2.0.11"
   },
   "scripts": {
-    "start": "node application.js"
+    "start": "node application.js",
+    "type": "module"
 }
 }
